@@ -77,3 +77,14 @@ sudo systemctl restart shadowsocks-libev.service
 
 # 下载shadowsocks client 
 [Download](https://github.com/shadowsocks/ShadowsocksX-NG/releases/tag/v1.9.4)
+
+
+#自定义编辑pac规则
+```
+"||example.com",  意思是所有 example.com域名下的网址都走代理(注意：后面需要半角逗号，即英文输入法下逗号）
+
+"@@||example.com", 例外规则，意思是所有  example .com域名下的网址都不走代理
+
+ "|http://example.com 、 example.com|", 起止规则， 意思是以 http://example.com 开始和以 example.com 结束的地址都走代理
+ 
+```
